@@ -1,0 +1,84 @@
+.container--estrutura {
+  padding-left: 40px !important ;
+  padding-right: 40px !important;
+  .listContainer--Guias {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-bottom: 1px solid #b9b9b9;
+    padding: 0px 64px;
+    margin-bottom: 36px;
+    @media (max-width: 1024px) {
+      flex-direction: column;
+      padding: 0px 0px;
+    }
+    .listItem--renderGuia {
+      margin: 0;
+      padding: 0;
+      @media (max-width: 1024px) {
+        width: inherit;
+      }
+      :global(.vtex-button) {
+        border: 0;
+        @media (min-width: 2500px) {
+          font-size: 24px !important;
+        }
+        @media (max-width: 1024px) {
+          width: inherit;
+          display: flex;
+          justify-content: start;
+        }
+      }
+      :global(.vtex-button__label) {
+        font-family: "Open Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 38px;
+        color: #bfbfbf;
+        text-transform: capitalize;
+        @media (max-width: 1920px) {
+          font-size: 18px;
+        }
+        @media (max-width:1024px) {
+          padding-left: 0px;
+        }
+      }
+    }
+    .listItemActive--renderGuia {
+      border-bottom: 3px solid #000000;
+      background-color: white;
+      line-height: 0%;
+      @media (max-width: 1024px) {
+        border-bottom: none;
+      }
+      :global(.vtex-button) {
+        background-color: white !important;
+        border: 0;
+      }
+      :global(.vtex-button__label) {
+        font-family: "Open Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 38px;
+        color: black !important;
+        @media (max-width: 1920px) {
+          font-size: 18px;
+        }
+        @media (max-width:1024px) {
+          padding-left: 0px;
+        }
+      }
+    }
+  }
+  .contentContainer--listRender {
+    margin-left: 32px;
+    padding-right: 52px;
+    @media (max-width: 1024px) {
+      margin-left: 0px;
+      padding-right: 0px;
+      border-bottom: 1px solid #bfbfbf;
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "example-component": {
+    "component": "Example"
+  },
+  "html": {
+    "component": "html",
+    "composition": "children"
+  },
+  "pixCustom": {
+    "component": "pixCustom"
+  },
+  "PlaceholderCep": {
+    "component": "PlaceholderCep"
+  }
+}

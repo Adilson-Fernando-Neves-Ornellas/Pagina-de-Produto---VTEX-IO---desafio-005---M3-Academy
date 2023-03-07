@@ -1,0 +1,47 @@
+/*
+0 - 600PX: Phone
+600 - 900px: Table portrait
+900 - 1200px: Tablet landscape
+[1200 - 1800] is where our nortal styles apply
+1800px + : Big desktop
+*/
+/* Media Query M3 */
+/* Grid breakpoints */
+.container--tituloSlick {
+  height: 40px;
+  margin-bottom: 32px;
+  margin-top: 16px;
+}
+@media (min-width: 1024px) {
+  .container--tituloSlick {
+    margin-bottom: 24px;
+  }
+}
+@media (min-width: 500px) {
+  .container--tituloSlick {
+    margin-bottom: 16px;
+  }
+}
+.container--tituloSlick .paragraph--tituloSlick {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 38px;
+  text-align: center;
+  color: #575757;
+}
+@media (max-width: 500px) {
+  .container--tituloSlick .paragraph--tituloSlick {
+    font-size: 20px;
+  }
+}
+
+.wrapper--titleCep .paragraph--titleCep {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #929292;
+}

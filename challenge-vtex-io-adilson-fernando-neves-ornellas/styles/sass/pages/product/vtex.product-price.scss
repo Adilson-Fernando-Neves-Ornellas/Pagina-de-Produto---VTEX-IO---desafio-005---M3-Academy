@@ -1,0 +1,50 @@
+.listPrice--list-price {
+  display: block;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+  text-decoration-line: line-through;
+  color: #bababa;
+  @media (max-width: 1024px) {
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+
+.sellingPrice--hasListPrice {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 33px;
+  text-align: center;
+  color: #000000;
+  @media (max-width: 1024px) {
+    font-size: 18px;
+    line-height: 25px;
+  }
+}
+
+.installments--divParcelamente {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #929292;
+  .installmentsNumber--divParcelamente {
+    font-weight: 700;
+    &::after {
+      content: "x";
+    }
+  }
+  .installments-discount--divParcelamente {
+    font-weight: 700;
+  }
+  .currencyContainer--divParcelamente {
+    font-weight: 700;
+  }
+}

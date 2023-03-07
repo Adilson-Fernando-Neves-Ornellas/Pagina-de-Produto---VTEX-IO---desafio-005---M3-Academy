@@ -1,0 +1,34 @@
+.sliderLayoutContainer--carousel {
+  .sliderLeftArrow {
+    visibility: hidden;
+    &::before {
+      visibility: visible;
+      content: url("https://agenciamagma.vtexassets.com/arquivos/AdilsonFernandoNevesOrnellas-leftarrowslick.png");
+    }
+  }
+  .sliderRightArrow {
+    visibility: hidden;
+    &::after {
+      visibility: visible;
+      content: url("https://agenciamagma.vtexassets.com/arquivos/AdilsonFernandoNevesOrnellas-rightarrowslick.png");
+    }
+  }
+}
+
+.sliderTrackContainer--carousel {
+  background-color: $color-white;
+  margin-left: 40px;
+  margin-right: 40px;
+  .sliderTrack--carousel {
+    gap: 16px;
+  }
+}
+.paginationDotsContainer--carousel {
+  .paginationDot--carousel {
+    background-color: black;
+  }
+  .paginationDot--carousel--isActive {
+    background-color: white;
+    border: 0.5px solid #000000;
+  }
+}

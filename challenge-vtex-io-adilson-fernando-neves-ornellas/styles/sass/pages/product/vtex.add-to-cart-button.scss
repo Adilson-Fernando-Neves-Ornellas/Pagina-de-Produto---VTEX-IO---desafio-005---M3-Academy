@@ -1,0 +1,12 @@
+.buttonDataContainer {
+  font-size: 0;
+  .buttonText::after {
+    content: "ADICIONAR À SACOLA";
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    // color: #ffffff;
+  }
+}

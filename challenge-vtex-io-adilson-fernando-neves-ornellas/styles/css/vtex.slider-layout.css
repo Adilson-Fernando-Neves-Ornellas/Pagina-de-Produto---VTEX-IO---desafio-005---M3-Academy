@@ -1,0 +1,40 @@
+/*
+0 - 600PX: Phone
+600 - 900px: Table portrait
+900 - 1200px: Tablet landscape
+[1200 - 1800] is where our nortal styles apply
+1800px + : Big desktop
+*/
+/* Media Query M3 */
+/* Grid breakpoints */
+.sliderLayoutContainer--carousel .sliderLeftArrow {
+  visibility: hidden;
+}
+.sliderLayoutContainer--carousel .sliderLeftArrow::before {
+  visibility: visible;
+  content: url("https://agenciamagma.vtexassets.com/arquivos/AdilsonFernandoNevesOrnellas-leftarrowslick.png");
+}
+.sliderLayoutContainer--carousel .sliderRightArrow {
+  visibility: hidden;
+}
+.sliderLayoutContainer--carousel .sliderRightArrow::after {
+  visibility: visible;
+  content: url("https://agenciamagma.vtexassets.com/arquivos/AdilsonFernandoNevesOrnellas-rightarrowslick.png");
+}
+
+.sliderTrackContainer--carousel {
+  background-color: #fff;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+.sliderTrackContainer--carousel .sliderTrack--carousel {
+  gap: 16px;
+}
+
+.paginationDotsContainer--carousel .paginationDot--carousel {
+  background-color: black;
+}
+.paginationDotsContainer--carousel .paginationDot--carousel--isActive {
+  background-color: white;
+  border: 0.5px solid #000000;
+}

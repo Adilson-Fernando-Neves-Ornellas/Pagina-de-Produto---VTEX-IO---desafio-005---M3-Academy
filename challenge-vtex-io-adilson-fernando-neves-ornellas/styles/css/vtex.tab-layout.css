@@ -1,0 +1,113 @@
+/*
+0 - 600PX: Phone
+600 - 900px: Table portrait
+900 - 1200px: Tablet landscape
+[1200 - 1800] is where our nortal styles apply
+1800px + : Big desktop
+*/
+/* Media Query M3 */
+/* Grid breakpoints */
+.container--estrutura {
+  padding-left: 40px !important;
+  padding-right: 40px !important;
+}
+.container--estrutura .listContainer--Guias {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-bottom: 1px solid #b9b9b9;
+  padding: 0px 64px;
+  margin-bottom: 36px;
+}
+@media (max-width: 1024px) {
+  .container--estrutura .listContainer--Guias {
+    flex-direction: column;
+    padding: 0px 0px;
+  }
+}
+.container--estrutura .listContainer--Guias .listItem--renderGuia {
+  margin: 0;
+  padding: 0;
+}
+@media (max-width: 1024px) {
+  .container--estrutura .listContainer--Guias .listItem--renderGuia {
+    width: inherit;
+  }
+}
+.container--estrutura .listContainer--Guias .listItem--renderGuia :global(.vtex-button) {
+  border: 0;
+}
+@media (min-width: 2500px) {
+  .container--estrutura .listContainer--Guias .listItem--renderGuia :global(.vtex-button) {
+    font-size: 24px !important;
+  }
+}
+@media (max-width: 1024px) {
+  .container--estrutura .listContainer--Guias .listItem--renderGuia :global(.vtex-button) {
+    width: inherit;
+    display: flex;
+    justify-content: start;
+  }
+}
+.container--estrutura .listContainer--Guias .listItem--renderGuia :global(.vtex-button__label) {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 38px;
+  color: #bfbfbf;
+  text-transform: capitalize;
+}
+@media (max-width: 1920px) {
+  .container--estrutura .listContainer--Guias .listItem--renderGuia :global(.vtex-button__label) {
+    font-size: 18px;
+  }
+}
+@media (max-width: 1024px) {
+  .container--estrutura .listContainer--Guias .listItem--renderGuia :global(.vtex-button__label) {
+    padding-left: 0px;
+  }
+}
+.container--estrutura .listContainer--Guias .listItemActive--renderGuia {
+  border-bottom: 3px solid #000000;
+  background-color: white;
+  line-height: 0%;
+}
+@media (max-width: 1024px) {
+  .container--estrutura .listContainer--Guias .listItemActive--renderGuia {
+    border-bottom: none;
+  }
+}
+.container--estrutura .listContainer--Guias .listItemActive--renderGuia :global(.vtex-button) {
+  background-color: white !important;
+  border: 0;
+}
+.container--estrutura .listContainer--Guias .listItemActive--renderGuia :global(.vtex-button__label) {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 38px;
+  color: black !important;
+}
+@media (max-width: 1920px) {
+  .container--estrutura .listContainer--Guias .listItemActive--renderGuia :global(.vtex-button__label) {
+    font-size: 18px;
+  }
+}
+@media (max-width: 1024px) {
+  .container--estrutura .listContainer--Guias .listItemActive--renderGuia :global(.vtex-button__label) {
+    padding-left: 0px;
+  }
+}
+.container--estrutura .contentContainer--listRender {
+  margin-left: 32px;
+  padding-right: 52px;
+}
+@media (max-width: 1024px) {
+  .container--estrutura .contentContainer--listRender {
+    margin-left: 0px;
+    padding-right: 0px;
+    border-bottom: 1px solid #bfbfbf;
+  }
+}

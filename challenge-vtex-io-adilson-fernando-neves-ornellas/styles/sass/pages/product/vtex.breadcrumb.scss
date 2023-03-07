@@ -1,0 +1,39 @@
+.container {
+  background-color: $color-white;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  margin-left: 40px;
+  .homeIcon {
+    display: none;
+  }
+  .homeLink::after {
+    content: "Home";
+    display: inline-block;
+  }
+  .arrow {
+    .link {
+      font-size: 0;
+    }
+    .link--1::after {
+      content: "Sapatos";
+      display: inline-block;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 19px;
+    }
+    .link--2::after {
+      content: "Sandálias";
+      display: inline-block;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 19px;
+    }
+  }
+  .termArrow {
+    display: none;
+  }
+  .term {
+    display: none;
+  }
+}

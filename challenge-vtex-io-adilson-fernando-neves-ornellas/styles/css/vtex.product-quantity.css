@@ -1,0 +1,47 @@
+/*
+0 - 600PX: Phone
+600 - 900px: Table portrait
+900 - 1200px: Tablet landscape
+[1200 - 1800] is where our nortal styles apply
+1800px + : Big desktop
+*/
+/* Media Query M3 */
+/* Grid breakpoints */
+.quantitySelectorContainer {
+  width: 128px;
+  height: 49px;
+}
+.quantitySelectorContainer .quantitySelectorTitle {
+  display: none;
+}
+.quantitySelectorContainer .quantitySelectorStepper--divQuantidade {
+  height: 49px;
+}
+.quantitySelectorContainer .quantitySelectorStepper--divQuantidade :global(.vtex-numeric-stepper-wrapper) {
+  height: 49px;
+}
+.quantitySelectorContainer .quantitySelectorStepper--divQuantidade :global(.vtex-numeric-stepper-wrapper) :global(.vtex-numeric-stepper-container) {
+  height: 49px;
+}
+.quantitySelectorContainer .quantitySelectorStepper--divQuantidade :global(.vtex-numeric-stepper-wrapper) :global(.vtex-numeric-stepper-container) :global(.vtex-numeric-stepper__input) {
+  border-left: 0px;
+  border-right: 0px;
+  padding: 0;
+  height: 100%;
+  width: 55.3513514px !important;
+  border-radius: 0 !important;
+}
+.quantitySelectorContainer .quantitySelectorStepper--divQuantidade :global(.vtex-numeric-stepper-wrapper) :global(.vtex-numeric-stepper-container) :global(.vtex-numeric-stepper__plus-button) {
+  color: black;
+  background-color: white;
+  height: 49px;
+  width: 34.9405405px !important;
+  border-radius: 0 !important;
+}
+.quantitySelectorContainer .quantitySelectorStepper--divQuantidade :global(.vtex-numeric-stepper-wrapper) :global(.vtex-numeric-stepper-container) :global(.vtex-numeric-stepper__minus-button) {
+  color: black;
+  background-color: white;
+  height: 49px;
+  width: 34.9405405px !important;
+  border-radius: 0 !important;
+}
